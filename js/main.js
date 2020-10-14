@@ -3,6 +3,9 @@
 
 $(document).ready(function(){
 
+    AOS.init({
+        duration: 700
+    });
 
     //menu toggle
 

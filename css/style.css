@@ -27,7 +27,8 @@ a {
 .main_menu li a {
     padding: 0 15px;
     color: #fff;
-    text-shadow: 0 0 2px rgba(0,0,0,0.8);
+    text-shadow: 1px 0 2px rgba(0,0,0,0.95);
+    font-weight: 700;
 }
 .header.hd-transparent {
     position: absolute;
@@ -132,7 +133,7 @@ a {
     transition:all 0.3s ease;
     -webkit-animation:linear infinite alternate;
 -webkit-animation-name: ltor;
--webkit-animation-duration: 7s;
+-webkit-animation-duration: 10s;
 
 }
 
@@ -246,6 +247,137 @@ z-index: 9;
 .noscroll {
     overflow: hidden;
     max-height: 100vh;
+}
+.cont.bg.whyc {
+    padding: 150px 0 0;
+    color: #fff;
+}
+
+.img-fluid.whimg {
+    max-height: 450px;
+    margin: auto;
+    max-width: 850px;
+    width: 100%;
+    position: relative;
+    z-index: 9; 
+}
+
+.wh_row {
+    padding: 60px 0 200px;
+    
+}
+.tl .whim {
+    position: relative;
+    text-align: right;
+}
+.tr .whim {
+    position: relative;
+}
+
+.tl h3 {
+    padding-right: 11vw;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 48px;
+    margin-bottom: 0;
+}
+.tr h3 {
+    padding-left: 5vw;
+    font-size: 36px;
+    padding-right: 5vw;
+    font-weight: 300;
+line-height: 48px;
+margin-bottom: 0;
+}
+
+.wh_row.tr {
+    position: relative;
+}
+.wh_row.tr .col-md-6 {
+    position: relative;
+    z-index: 99;
+}
+
+.cline.whline1 img {
+    width: 110vw;
+}
+.cline.whline1 {
+    top: -95px;
+}
+.wh_made {
+    background: url(../img/madeindia.jpg) no-repeat center transparent;
+    position: relative;
+    padding: 220px 0;
+    text-align: center;
+}
+.wh_made h3 {
+    font-size: 44px;
+}
+.container-fluid.whs2 {
+    padding-top: 120px;
+}
+.cline.whline2 {
+    top: -20px;
+}
+.tl .whim::before {
+
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    max-width: 100%;
+    max-height: 100%;
+    background: #000;
+    opacity: 0.1;
+    border-radius: 100%;
+    left: 80px;
+    top: 0;
+    z-index: 0;
+    transition:all 0.3s ease;
+    -webkit-animation:linear infinite alternate;
+-webkit-animation-name: updown;
+-webkit-animation-duration: 6s;
+
+}
+
+.tr .whim::before {
+
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    max-width: 100%;
+    max-height: 100%;
+    background: #000;
+    opacity: 0.1;
+    border-radius: 100%;
+    right: 80px;
+    top: 0;
+    z-index: 0;
+    transition:all 0.3s ease;
+    -webkit-animation:linear infinite alternate;
+-webkit-animation-name: updown;
+-webkit-animation-duration: 5s;
+
+}
+
+@-webkit-keyframes updown {
+    0% { top: 0px;}
+    50%{ top: 50px;}
+    100%{ top: 0px;}
+}
+
+.whst2 {
+    background: url(../img/whystrip2.jpg) no-repeat center transparent;
+    padding: 140px 0; 
+}
+
+.wstxt {
+    max-width: 890px;
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    line-height: 38px;
 }
 
 /* MQ */
@@ -387,7 +519,7 @@ z-index: 9;
 
 @media only screen and (max-width:1099px) {
     .main_menu li a {
-        font-size: 14px;
+        font-size: 18px;
     }
     .logo.img-fluid {
         width: 100px;
