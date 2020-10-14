@@ -457,6 +457,17 @@ margin-bottom: 0;
     .abcontent.row.justify-content-between {
         margin: 0 -20px;
     }
+    .tl h3 {
+        padding-right: 4vw;
+        font-size: 32px;
+    }
+    .tr h3 {
+        padding-left: 2vw;
+        font-size: 32px;
+    }
+    .wh_made {
+        padding: 180px 0;
+    }
 }
 
 @media only screen and (max-width:1366px){
@@ -469,6 +480,12 @@ margin-bottom: 0;
     }
     .pf_text h3 {
         padding-left: 40px;
+    }
+    .cline.whline1 img {
+        width: 140vw;
+    }
+    .cline.whline1 {
+        top: -22px;
     }
 }
 
