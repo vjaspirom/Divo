@@ -10,5 +10,6 @@ $(document).ready(function(){
         e.preventDefault();
         $(this).toggleClass('active');
         $('.main_menu').toggleClass('active');
+        $('body').toggleClass('noscroll');
     })
 })

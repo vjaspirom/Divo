@@ -211,7 +211,42 @@ a {
 .footer_menu li a:hover {
     color: #fff;
 }
+.abcontent p {
+    color: #ccc;
+    max-width: 99%;
+    position: relative;
+    z-index: 99;
+}
+.ab_title h3 {
+    font-size: 24px;
+    position: relative;
+z-index: 9;
+}
+.ab_title {
+    padding: 130px 0 30px;
+    color: #f1f1f1;
+}
+.cline.abline {
+    -webkit-animation: none;
+    top: 90px;
+    z-index: 0;
+    left: calc(-50vw + 50%);
+}
+.absection {
+    position: relative;
+}
+.cline.abline img {
+    width: 100vw;
+}
 
+.abcontent {
+    font-size: 18px;
+    line-height: 36px;
+}
+.noscroll {
+    overflow: hidden;
+    max-height: 100vh;
+}
 
 /* MQ */
 
@@ -230,6 +265,15 @@ a {
     }
     .pf_text h3 br {
         display: none;
+    }
+    .abcontent p {
+        max-width: 100%;
+    }
+    .cline.abline img {
+        width: 115vw;
+    }
+    .cline.abline {
+        top: 110px;
     }
 }
 
@@ -252,6 +296,34 @@ a {
     .red_strip h3 {
         max-width: 88%;
         font-size: 32px;
+    }
+    .abcontent {
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .ab_title h3 {
+        font-size: 20px;
+    }
+    .abcontent.row.justify-content-between > div {
+        max-width: 50%;
+        flex-basis: 50%;
+        padding: 0 40px;
+    }
+    .abcontent.row.justify-content-between  {
+        margin: 0 -40px;
+    }
+    .cline.abline img {
+        width: 105vw;
+    }
+    .cline.abline {
+        top: 110px;
+        left: calc(-55vw + 50%);
+    }
+    .abcontent.row.justify-content-between > div {
+        padding: 0 20px;
+    }
+    .abcontent.row.justify-content-between {
+        margin: 0 -20px;
     }
 }
 
@@ -284,6 +356,17 @@ a {
     .cline img {
         max-width: calc(100vw + 170px);
     }
+    .cline.abline {
+        top: 130px;
+    }
+    .abcontent {
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .ab_title h3 {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
 }
 
 @media only screen and (max-width:1160px){
@@ -295,6 +378,10 @@ a {
     }
     .pf_text h3 {
         font-size: 26px;
+    }
+    .abcontent {
+        font-size: 14px;
+        line-height: 26px;
     }
 }
 
@@ -325,6 +412,14 @@ a {
         height: 4px;
         width: 40px;
         margin-right: 15px;
+    }
+    .cline.abline {
+        top: 135px !important;
+        left: calc(-58vw + 50%);
+    }
+    .cline img {
+        width: 125vw !important;
+        max-width: none;
     }
 }
 
@@ -465,6 +560,14 @@ a {
     
 }
 
+
+@media only screen and (max-width:992px) {
+    .cline img {
+        width: 165vw !important;
+    }
+}
+
+
 @media only screen and (max-width:768px) {
     .banner_text h3 {
         line-height: 30px;
@@ -484,6 +587,18 @@ a {
         padding: 100px 0;
         min-height: 80vh;
     } 
+    .abcontent.row.justify-content-between > div {
+        max-width: 100%;
+        flex-basis: 100%;
+        display: inline;
+    }
+    .cline.abline {
+        top: 200px !important;
+    }
+    .cline img {
+        width: 155vw !important;
+        transform: rotate(36deg) translateX(0%) translateY(80%);
+    }
 }
 
 @media only screen and (max-width:600px){
