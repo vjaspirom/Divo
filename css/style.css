@@ -501,6 +501,19 @@ margin-bottom: 0;
     margin-top: 15px;
     margin-bottom: 0;
 }
+.roytlstrip {
+    background: url(../img/rylstrip.jpg) no-repeat center transparent;
+    background-size: cover;
+    padding: 100px 50px;
+    text-align:center;
+}
+.roytlstrip h3 {
+    width: 85%;
+    max-width: 900px;
+    margin: auto;
+    line-height: 46px;
+    padding: 20px 0;
+}
 /* MQ */
 
 @media only screen and (max-width:1610px) {
@@ -978,6 +991,15 @@ margin-bottom: 0;
     .each_art.art4 {
         top: 10px;
     }
+    .roytlstrip h3 {
+        width: 90%;
+        font-size: 24px;
+    }
+    .roytlstrip h3 {
+        width: 100%;
+        font-size: 18px;
+        line-height: 34px;
+    }
 }
 
 
@@ -1173,7 +1195,11 @@ margin-bottom: 0;
     }
     .red_strip.clients {
         padding: 30px;
-        background-size: 
+        background-size: cover;
+    }
+    .roytlstrip {
+        padding: 70px 20px;
+    }
 }
 
 @media only screen and (max-width:480px){
