@@ -34,6 +34,8 @@ a {
     position: absolute;
     width: 100%;
     padding: 40px 0;
+    min-height: 148px;
+    z-index: 999;
 }
 .banner_img img {
     width: 100vw;
@@ -513,6 +515,65 @@ margin-bottom: 0;
     margin: auto;
     line-height: 46px;
     padding: 20px 0;
+}
+.contact .inner_banner.banner_text {
+    bottom: 0;
+    position: relative;
+    padding-top: 200px;
+}
+.contact_locs {
+    color: #ccc;
+}
+.loc_icon, .locarea {
+    display: inline-block;
+    vertical-align: middle;
+}
+.locarea {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.loc_icon {
+    padding-right: 35px;
+}
+.locarea LI {
+    display: inline-block;
+    padding: 0 35px;
+    font-size: 20px;
+    border-right: 2px solid #ccc;
+    line-height: 20px;
+}
+.locarea li:last-child {
+    border: none;
+}
+.contact_locs {
+    color: #ccc;
+    padding-top: 50px;
+}
+.cont.bg.contact .main_banner {
+    background: url('../img/contactmap.png') no-repeat transparent;
+    background-position: top 0 right;
+    background-size: auto 85vh;
+}
+.choosebtn {
+    padding: 80px 0;
+    display: flex;
+}
+.choosebtn a {
+    padding: 20px 10px;
+    color: #ccc;
+    text-align: center;
+    display: inline-block;
+    flex-basis: 50%;
+    max-width: 50%;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+.choosebtn a:hover {
+    background: #ec1c24;
+    color: #fff;
+    border-color: #ec1c24;
 }
 /* MQ */
 
