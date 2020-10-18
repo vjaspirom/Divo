@@ -1,23 +1,23 @@
 // Divo Scripts
 
+jQuery(window).on('load', (function() {
+    
+    $('.fill').width("100%");
+    
+}));
+
 
 $(document).ready(function(){
+   
+
+    setInterval(function(){ 
+        $('.loader').hide(300);
+     }, 3000);
+
 
     AOS.init({
         duration: 700
     });
-
-    $('select').selectpicker();
-
-    // $('select').select2({
-    //     minimumResultsForSearch: -1
-    // });
-
-    // $('.form-col select').select2({
-    //     placeholder: "Language",
-    //     minimumResultsForSearch: -1
-
-    // });
 
     //menu toggle
 
@@ -47,4 +47,7 @@ $(document).ready(function(){
 
         }
     })
+
+    $('select').selectpicker();
+    
 })
