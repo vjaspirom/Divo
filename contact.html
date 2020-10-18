@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/fontawesome/css/all.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="css/style.css">
 
     <title>Contact - Divo</title>
@@ -75,7 +76,8 @@
                     </div>
                 </div>
                 <div class="container-fluid">
-                    <div class="contact_locs">
+                    <div class="contact_locs"  data-aos="fade-right"
+                    data-aos-duration="1000" data-aos-delay="600">
                         <div class="loc_icon">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
@@ -95,17 +97,69 @@
                         </ul>
                     </div>
                     <div class="contact_section">
-                        <div class="choosebtn">
-                            <a href="#" class="producer active">Are you a label or a film producer?</a>
+                        <div class="choosebtn"  data-aos="fade-up"
+                        data-aos-duration="1000" data-aos-delay="1000">
+                            <a href="#" class="producer">Are you a label or a film producer?</a>
                             <a href="#" class="artist">Are you an artist or musician?</a>
                         </div>
-                        <div class="formholder">
+                        <div class="formholder"  data-aos="fade-right"
+                        data-aos-duration="300" >
                             <div class="producer_form">
 
-                                producer form
+                                <form action="" class="form-group">
+                                    <div class="form-col">
+                                        <input type="text" placeholder="Name">
+                                    </div>
+                                    <div class="form-col">
+                                        <input type="text" placeholder="Company name">
+                                    </div>
+                                    <div class="form-col">
+                                        <input type="text" placeholder="Phone number">
+                                    </div>
+                                    <div class="form-col">
+                                        <input type="email" placeholder="Phone number">
+                                    </div>
+                                    <div class="form-col">
+                                        <select class="selectpicker" title="Language">
+                                            <option value="english" >English</option>
+                                            <option value="hindi" >Hindi</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-col">
+                                        <input type="text" placeholder="Message">
+                                    </div>
+                                    <div class="form_submit">
+                                        <div class="form-col">
+                                            <input type="submit" class="send" value="Send"/>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                             <div class="artist_form">
-                                artist form
+                                <form action="" class="form-group">
+                                    <div class="form-col">
+                                        <input type="text" placeholder="Name">
+                                    </div>
+                                    <div class="form-col">
+                                        <input type="text" placeholder="Phone number">
+                                    </div>
+                                    <div class="form-col">
+                                        <input type="email" placeholder="Phone number">
+                                    </div>
+                                    <div class="form-col">
+                                        <select class="selectpicker" title="Language">
+                                            <option value="english" >English</option>
+                                            <option value="hindi" >Hindi</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-col">
+                                        <input type="text" placeholder="Message">
+                                    </div>
+                                    <div class="form-col">
+                                        <input type="submit" class="send" value="Send"/>
+                                    </div>
+                                    
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -161,9 +215,10 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js" integrity="sha512-yDlE7vpGDP7o2eftkCiPZ+yuUyEcaBwoJoIhdXv71KZWugFqEphIS3PU60lEkFaz8RxaVsMpSvQxMBaKVwA5xg==" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
